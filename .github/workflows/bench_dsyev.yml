@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Machine Information
+        run: |
+          gcc --version
+          gfortran --version
+          lscpu
+      - name: Build OpenBLAS 0.3.27
+        run: |
+          env -i bash --noprofile --norc build_openblas.sh
+      - name: Install OneMKL 2024.1
+        run: |
+          bash build_mkl.sh
+      - name: Benchmark OpenBLAS 0.3.27
+        run: |
+          env -i bash --noprofile --norc bench_openblas.sh
+      - name: Benchmark OneMKL 2024.1
+        run: |
+          env -i bash --noprofile --norc bench_mkl.sh
