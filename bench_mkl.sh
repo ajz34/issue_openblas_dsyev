@@ -4,7 +4,7 @@ export BLAS_DIR=$ROOT_DIR/OneMKL/mkl/$VER
 export PATH=/usr/bin:$PATH
 
 export LD_LIBRARY_PATH=$BLAS_DIR/lib:$LD_LIBRARY_PATH
-export OMP_NUM_THREADS=2
+export OMP_NUM_THREADS=16
 
 # build
 gcc test_dsyev.c  -o test_dsyev  -fopenmp -O3 -L$BLAS_DIR/lib -Wl,--no-as-needed -lmkl_intel_lp64 -lmkl_gnu_thread -lmkl_core -lgomp -lpthread -lm -ldl

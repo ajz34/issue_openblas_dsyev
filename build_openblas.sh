@@ -4,7 +4,7 @@ export BLAS_DIR=$ROOT_DIR/OpenBLAS
 export PATH=/usr/bin:$PATH
 
 # download openblas
-wget https://github.com/OpenMathLib/OpenBLAS/releases/download/v$VER/OpenBLAS-$VER.tar.gz OpenBLAS-$VER.tar.gz
+# wget https://github.com/OpenMathLib/OpenBLAS/releases/download/v$VER/OpenBLAS-$VER.tar.gz OpenBLAS-$VER.tar.gz
 rm -r OpenBLAS-$VER
 tar -xf OpenBLAS-$VER.tar.gz
 
@@ -12,6 +12,6 @@ tar -xf OpenBLAS-$VER.tar.gz
 cd OpenBLAS-$VER
 make CC=gcc FC=gfortran \
     TARGET=ZEN USE_64BITINT=1 DYNAMIC_ARCH=1 NO_CBLAS=0 NO_LAPACK=0 NO_LAPACKE=0\
-    NO_AFFINITY=1 USE_OPENMP=1 MAX_THREADS=4 -j4
+    NO_AFFINITY=1 USE_OPENMP=1 MAX_THREADS=16 -j32
 make install PREFIX=$BLAS_DIR
 
