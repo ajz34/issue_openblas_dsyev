@@ -4,7 +4,7 @@ export BLAS_DIR=$ROOT_DIR/OpenBLAS
 export PATH=/usr/bin:$PATH
 
 export LD_LIBRARY_PATH=$BLAS_DIR/lib:$LD_LIBRARY_PATH
-export OMP_NUM_THREADS=4
+export OMP_NUM_THREADS=2
 
 # build
 gcc test_dsyev.c  -fopenmp -o test_dsyev.out  -O3 -lopenblas -L$BLAS_DIR/lib
