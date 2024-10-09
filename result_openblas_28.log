@@ -1,0 +1,32 @@
+test_dsyev, lwork = 69632
+test_dsyev, elapsed time:  4676.2620 msec
+test_dsyev, CPU     time:  9395.7943 msec
+test_dsyev, CPU    ratio:     2.0093
+test_dsyev, info = 0
+test_dsyevd, lwork = 8400897
+test_dsyevd, liwork = 10243
+test_dsyevd, elapsed time:   396.0258 msec
+test_dsyevd, CPU     time:  6335.3116 msec
+test_dsyevd, CPU    ratio:    15.9972
+test_dsyevd, info = 0
+test_dsyevr, lwork = 67584
+test_dsyevr, liwork = 20480
+test_dsyevr, elapsed time:   813.2506 msec
+test_dsyevr, CPU     time:  6886.2489 msec
+test_dsyevr, CPU    ratio:     8.4676
+test_dsyevr, info = 0
+test_dsyevx, lwork = 71680
+test_dsyevx, elapsed time:  4012.5293 msec
+test_dsyevx, CPU     time:  8731.9838 msec
+test_dsyevx, CPU    ratio:     2.1762
+test_dsyevx, info = 0
+test_dspgv
+test_dspgv, elapsed time:  6523.4956 msec
+test_dspgv, CPU     time: 20831.5607 msec
+test_dspgv, CPU    ratio:     3.1933
+test_dspgv, info = 0
+test_dspgvx
+test_dspgvx, elapsed time:  1549.5151 msec
+test_dspgvx, CPU     time: 16188.3169 msec
+test_dspgvx, CPU    ratio:    10.4473
+test_dspgvx, info = 0
