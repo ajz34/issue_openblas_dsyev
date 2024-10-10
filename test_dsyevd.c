@@ -42,7 +42,7 @@ int main() {
     clock_t c1, c2;
     double elapsed_time;
     double cpu_time;
-    int repeat = 10;
+    int repeat = 3;
     
     gettimeofday(&t1, NULL);
     c1 = clock();

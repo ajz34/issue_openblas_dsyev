@@ -21,12 +21,18 @@ jobs:
       - name: Build OpenBLAS 0.3.27
         run: |
           env -i bash --noprofile --norc build_openblas.sh
+      - name: Build OpenBLAS 0.3.27 with cmake
+        run: |
+          env -i bash --noprofile --norc build_openblas_cmake.sh
       - name: Install OneMKL 2024.1
         run: |
           bash build_mkl.sh
       - name: Benchmark OpenBLAS 0.3.27
         run: |
           env -i bash --noprofile --norc bench_openblas.sh
+      - name: Benchmark OpenBLAS 0.3.27 with cmake
+        run: |
+          env -i bash --noprofile --norc bench_openblas_cmake.sh
       - name: Benchmark OneMKL 2024.1
         run: |
           env -i bash --noprofile --norc bench_mkl.sh

@@ -1,6 +1,6 @@
 export VER="0.3.27"
 export ROOT_DIR=`pwd`
-export BLAS_DIR=$ROOT_DIR/OpenBLAS
+export BLAS_DIR=$ROOT_DIR/OpenBLAS-cmake
 export PATH=/usr/bin:$PATH
 
 # download openblas
@@ -13,6 +13,9 @@ rm -r $BLAS_DIR/OpenBLAS-$VER
 
 # build and install openblas
 cd $BLAS_DIR
-make CC=gcc FC=gfortran USE_OPENMP=1 NUM_THREADS=2 -j4
-make install PREFIX=$BLAS_DIR
+mkdir build
+cd build
+cmake .. -DBUILD_SHARED_LIBS=1 -DUSE_OPENMP=1 -DNO_AFFINITY=1 -DCMAKE_INSTALL_PREFIX=$BLAS_DIR
+make -j32
+make install
 

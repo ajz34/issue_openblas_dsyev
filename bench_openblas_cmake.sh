@@ -1,6 +1,6 @@
 export VER="0.3.27"
 export ROOT_DIR=`pwd`
-export BLAS_DIR=$ROOT_DIR/OpenBLAS
+export BLAS_DIR=$ROOT_DIR/OpenBLAS-cmake
 export PATH=/usr/bin:$PATH
 
 export LD_LIBRARY_PATH=$BLAS_DIR/lib:$LD_LIBRARY_PATH
