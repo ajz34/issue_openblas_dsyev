@@ -1,0 +1,50 @@
+openblas_get_num_threads   16
+openblas_get_parallel     Thread
+openblas_get_corename     Zen
+openblas_get_config       OpenBLAS 0.3.20 NO_LAPACKE DYNAMIC_ARCH NO_AFFINITY Zen MAX_THREADS=64
+test_dgemm
+test_dgemm, elapsed time:    24.4598 msec
+test_dgemm, CPU     time:   391.3282 msec
+test_dgemm, CPU    ratio:    15.9988
+test_dgemm
+test_dsyrk, elapsed time:    13.4641 msec
+test_dsyrk, CPU     time:   215.4085 msec
+test_dsyrk, CPU    ratio:    15.9987
+test_dsyev, lwork = 69632
+test_dsyev, elapsed time:  4800.2310 msec
+test_dsyev, CPU     time:  9526.8826 msec
+test_dsyev, CPU    ratio:     1.9847
+test_dsyev, info = 0
+test_dsyevd, lwork = 8400897
+test_dsyevd, liwork = 10243
+test_dsyevd, elapsed time:   405.2692 msec
+test_dsyevd, CPU     time:  6483.3222 msec
+test_dsyevd, CPU    ratio:    15.9976
+test_dsyevd, info = 0
+test_dsyevr, lwork = 67584
+test_dsyevr, liwork = 20480
+test_dsyevr, elapsed time:   834.5668 msec
+test_dsyevr, CPU     time:  6849.0324 msec
+test_dsyevr, CPU    ratio:     8.2067
+test_dsyevr, info = 0
+test_dsyevx, lwork = 71680
+test_dsyevx, elapsed time:  4185.7169 msec
+test_dsyevx, CPU     time:  8826.8828 msec
+test_dsyevx, CPU    ratio:     2.1088
+test_dsyevx, info = 0
+test_dspgv
+test_dspgv, elapsed time:  6557.5742 msec
+test_dspgv, CPU     time: 20348.7779 msec
+test_dspgv, CPU    ratio:     3.1031
+test_dspgv, info = 0
+test_dsyevd, lwork = 8400897
+test_dsyevd, liwork = 10243
+test_dspgvd, elapsed time:  2114.5503 msec
+test_dspgvd, CPU     time: 18866.8622 msec
+test_dspgvd, CPU    ratio:     8.9224
+test_dspgvd, info = 0
+test_dspgvx
+test_dspgvx, elapsed time:  1604.3014 msec
+test_dspgvx, CPU     time: 16753.0229 msec
+test_dspgvx, CPU    ratio:    10.4426
+test_dspgvx, info = 0

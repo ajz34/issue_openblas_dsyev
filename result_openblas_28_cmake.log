@@ -1,0 +1,50 @@
+openblas_get_num_threads   16
+openblas_get_parallel     Thread
+openblas_get_corename     COOPERLAKE
+openblas_get_config       OpenBLAS 0.3.28 NO_AFFINITY COOPERLAKE MAX_THREADS=16
+test_dgemm
+test_dgemm, elapsed time:    17.6713 msec
+test_dgemm, CPU     time:   282.7062 msec
+test_dgemm, CPU    ratio:    15.9980
+test_dgemm
+test_dsyrk, elapsed time:    13.7861 msec
+test_dsyrk, CPU     time:   195.0049 msec
+test_dsyrk, CPU    ratio:    14.1451
+test_dsyev, lwork = 69632
+test_dsyev, elapsed time: 26578.6139 msec
+test_dsyev, CPU     time: 31894.6038 msec
+test_dsyev, CPU    ratio:     1.2000
+test_dsyev, info = 0
+test_dsyevd, lwork = 8400897
+test_dsyevd, liwork = 10243
+test_dsyevd, elapsed time:   728.1738 msec
+test_dsyevd, CPU     time: 10496.1423 msec
+test_dsyevd, CPU    ratio:    14.4143
+test_dsyevd, info = 0
+test_dsyevr, lwork = 67584
+test_dsyevr, liwork = 20480
+test_dsyevr, elapsed time:  1607.9307 msec
+test_dsyevr, CPU     time:  7366.8819 msec
+test_dsyevr, CPU    ratio:     4.5816
+test_dsyevr, info = 0
+test_dsyevx, lwork = 71680
+test_dsyevx, elapsed time: 24461.5499 msec
+test_dsyevx, CPU     time: 29828.4421 msec
+test_dsyevx, CPU    ratio:     1.2194
+test_dsyevx, info = 0
+test_dspgv
+test_dspgv, elapsed time: 35749.1732 msec
+test_dspgv, CPU     time: 59294.8837 msec
+test_dspgv, CPU    ratio:     1.6586
+test_dspgv, info = 0
+test_dsyevd, lwork = 8400897
+test_dsyevd, liwork = 10243
+test_dspgvd, elapsed time:  5466.4581 msec
+test_dspgvd, CPU     time: 38321.6972 msec
+test_dspgvd, CPU    ratio:     7.0103
+test_dspgvd, info = 0
+test_dspgvx
+test_dspgvx, elapsed time:  3965.4905 msec
+test_dspgvx, CPU     time: 31503.8365 msec
+test_dspgvx, CPU    ratio:     7.9445
+test_dspgvx, info = 0

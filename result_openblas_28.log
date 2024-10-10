@@ -1,32 +1,50 @@
+openblas_get_num_threads   16
+openblas_get_parallel     Thread
+openblas_get_corename     COOPERLAKE
+openblas_get_config       OpenBLAS 0.3.28 NO_AFFINITY COOPERLAKE MAX_THREADS=16
+test_dgemm
+test_dgemm, elapsed time:    19.0950 msec
+test_dgemm, CPU     time:   305.4270 msec
+test_dgemm, CPU    ratio:    15.9951
+test_dgemm
+test_dsyrk, elapsed time:    11.4490 msec
+test_dsyrk, CPU     time:   162.0494 msec
+test_dsyrk, CPU    ratio:    14.1541
 test_dsyev, lwork = 69632
-test_dsyev, elapsed time:  4676.2620 msec
-test_dsyev, CPU     time:  9395.7943 msec
-test_dsyev, CPU    ratio:     2.0093
+test_dsyev, elapsed time:  4030.9248 msec
+test_dsyev, CPU     time:  8518.3594 msec
+test_dsyev, CPU    ratio:     2.1133
 test_dsyev, info = 0
 test_dsyevd, lwork = 8400897
 test_dsyevd, liwork = 10243
-test_dsyevd, elapsed time:   396.0258 msec
-test_dsyevd, CPU     time:  6335.3116 msec
-test_dsyevd, CPU    ratio:    15.9972
+test_dsyevd, elapsed time:   367.1734 msec
+test_dsyevd, CPU     time:  5874.5303 msec
+test_dsyevd, CPU    ratio:    15.9993
 test_dsyevd, info = 0
 test_dsyevr, lwork = 67584
 test_dsyevr, liwork = 20480
-test_dsyevr, elapsed time:   813.2506 msec
-test_dsyevr, CPU     time:  6886.2489 msec
-test_dsyevr, CPU    ratio:     8.4676
+test_dsyevr, elapsed time:   783.7581 msec
+test_dsyevr, CPU     time:  6383.0391 msec
+test_dsyevr, CPU    ratio:     8.1441
 test_dsyevr, info = 0
 test_dsyevx, lwork = 71680
-test_dsyevx, elapsed time:  4012.5293 msec
-test_dsyevx, CPU     time:  8731.9838 msec
-test_dsyevx, CPU    ratio:     2.1762
+test_dsyevx, elapsed time:  3354.8477 msec
+test_dsyevx, CPU     time:  7966.4661 msec
+test_dsyevx, CPU    ratio:     2.3746
 test_dsyevx, info = 0
 test_dspgv
-test_dspgv, elapsed time:  6523.4956 msec
-test_dspgv, CPU     time: 20831.5607 msec
-test_dspgv, CPU    ratio:     3.1933
+test_dspgv, elapsed time:  6132.0646 msec
+test_dspgv, CPU     time: 20994.1611 msec
+test_dspgv, CPU    ratio:     3.4237
 test_dspgv, info = 0
+test_dsyevd, lwork = 8400897
+test_dsyevd, liwork = 10243
+test_dspgvd, elapsed time:  2201.3311 msec
+test_dspgvd, CPU     time: 19574.9561 msec
+test_dspgvd, CPU    ratio:     8.8923
+test_dspgvd, info = 0
 test_dspgvx
-test_dspgvx, elapsed time:  1549.5151 msec
-test_dspgvx, CPU     time: 16188.3169 msec
-test_dspgvx, CPU    ratio:    10.4473
+test_dspgvx, elapsed time:  1809.8504 msec
+test_dspgvx, CPU     time: 19827.1891 msec
+test_dspgvx, CPU    ratio:    10.9552
 test_dspgvx, info = 0

@@ -1,32 +1,46 @@
+test_dgemm
+test_dgemm, elapsed time:    23.4202 msec
+test_dgemm, CPU     time:   373.9771 msec
+test_dgemm, CPU    ratio:    15.9682
+test_dgemm
+test_dsyrk, elapsed time:    22.9164 msec
+test_dsyrk, CPU     time:   365.8291 msec
+test_dsyrk, CPU    ratio:    15.9636
 test_dsyev, lwork = 36864
-test_dsyev, elapsed time:   587.6430 msec
-test_dsyev, CPU     time:  9274.0010 msec
-test_dsyev, CPU    ratio:    15.7817
+test_dsyev, elapsed time:   584.1925 msec
+test_dsyev, CPU     time:  9207.9772 msec
+test_dsyev, CPU    ratio:    15.7619
 test_dsyev, info = 0
 test_dsyevd, lwork = 8400897
 test_dsyevd, liwork = 10243
-test_dsyevd, elapsed time:   209.8000 msec
-test_dsyevd, CPU     time:  3289.7647 msec
-test_dsyevd, CPU    ratio:    15.6805
+test_dsyevd, elapsed time:   218.6509 msec
+test_dsyevd, CPU     time:  3401.6884 msec
+test_dsyevd, CPU    ratio:    15.5576
 test_dsyevd, info = 0
 test_dsyevr, lwork = 71680
 test_dsyevr, liwork = 20480
-test_dsyevr, elapsed time:   684.3263 msec
-test_dsyevr, CPU     time:  3099.7655 msec
-test_dsyevr, CPU    ratio:     4.5297
+test_dsyevr, elapsed time:   688.8206 msec
+test_dsyevr, CPU     time:  3158.9855 msec
+test_dsyevr, CPU    ratio:     4.5861
 test_dsyevr, info = 0
 test_dsyevx, lwork = 71680
-test_dsyevx, elapsed time:   522.4863 msec
-test_dsyevx, CPU     time:  8227.9814 msec
-test_dsyevx, CPU    ratio:    15.7477
+test_dsyevx, elapsed time:   514.0718 msec
+test_dsyevx, CPU     time:  8089.4635 msec
+test_dsyevx, CPU    ratio:    15.7361
 test_dsyevx, info = 0
 test_dspgv
-test_dspgv, elapsed time:  1790.9925 msec
-test_dspgv, CPU     time: 11976.1735 msec
-test_dspgv, CPU    ratio:     6.6869
+test_dspgv, elapsed time:  1797.1969 msec
+test_dspgv, CPU     time: 12109.7329 msec
+test_dspgv, CPU    ratio:     6.7381
 test_dspgv, info = 0
+test_dsyevd, lwork = 8400897
+test_dsyevd, liwork = 10243
+test_dspgvd, elapsed time:  1496.6039 msec
+test_dspgvd, CPU     time:  7176.0692 msec
+test_dspgvd, CPU    ratio:     4.7949
+test_dspgvd, info = 0
 test_dspgvx
-test_dspgvx, elapsed time:  1032.8906 msec
-test_dspgvx, CPU     time:  4681.0079 msec
-test_dspgvx, CPU    ratio:     4.5319
+test_dspgvx, elapsed time:  1036.4681 msec
+test_dspgvx, CPU     time:  4717.2054 msec
+test_dspgvx, CPU    ratio:     4.5512
 test_dspgvx, info = 0
